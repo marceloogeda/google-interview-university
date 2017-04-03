@@ -1,170 +1,179 @@
-# Universidade de Entrevista de Programação
+# Coding Interview University #
 
-> I originally created this as a short to-do list of study topics for becoming a software engineer, 
-> but it grew to the large list you see today. After going through this study plan, [I got hired 
-> as a Software Development Engineer at Amazon](https://startupnextdoor.com/ive-been-acquired-by-amazon/?src=ciu)! 
-> You probably won't have to study as much as I did. Anyway, everything you need is here.
+>**เดิมทีผมสร้างขึ้นเพื่อเป็นรายการที่ต้องทำสำหรับหัวข้อที่ต้องศึกษาเพื่อที่จะเป็นวิศวกรซอฟต์แวร์ แต่ว่ามันเติบโตขึ้นอย่างมากและมีหัวข้อต่างๆ มากมายอย่างที่คุณเห็นอยู่ทุกวันนี้
+หัวข้อต่างๆ นี้จะเป็นสิ่งที่ให้คุณเตรียมตัวสำหรับสัมภาษณ์งานสำหรับบริษัทซอฟต์แวร์รวมทั้งบริษัทซอฟต์แวร์ขนาดใหญ่ของโลกอย่างเช่น Amazon Facebook Google หรือ Microsoft **
 >
-> The items listed here will prepare you well for in an interview at just about any software company, 
-> including the giants: Amazon, Facebook, Google or Microsoft.
->
-> *Best of luck to you!*
+> *ขอให้คุณโชคดี!*
 
-Original: [Inglês](https://github.com/jwasham/coding-interview-university/blob/master/README.md)
-    
-## O que é isso?
+การแปลภาษา:
+- [中文版本](translations/README-cn.md)
+- กำลังดำเนินการแปลภาษา:
+    - [Español](https://github.com/jwasham/coding-interview-university/issues/80)
+    - [हिन्दी](https://github.com/jwasham/coding-interview-university/issues/81)
+    - [עברית](https://github.com/jwasham/coding-interview-university/issues/82)
+    - [Bahasa Indonesia](https://github.com/jwasham/coding-interview-university/issues/101)
+    - [Arabic](https://github.com/jwasham/coding-interview-university/issues/98)
+    - [Vietnamese](https://github.com/jwasham/coding-interview-university/issues/92)
+    - [Turkish](https://github.com/jwasham/coding-interview-university/issues/90)
+    - [French](https://github.com/jwasham/coding-interview-university/issues/89)
+    - [Russian](https://github.com/jwasham/coding-interview-university/issues/87)
+    - [Ukrainian](https://github.com/jwasham/coding-interview-university/issues/106)
+    - [Brazilian Portuguese](https://github.com/jwasham/coding-interview-university/issues/113)
+    - [Korean](https://github.com/jwasham/coding-interview-university/issues/118)
+    - [Telugu](https://github.com/jwasham/coding-interview-university/issues/117)
+    - [Polish](https://github.com/jwasham/coding-interview-university/issues/122)
+    - [German](https://github.com/jwasham/coding-interview-university/issues/135)
+    - [Urdu](https://github.com/jwasham/coding-interview-university/issues/140)
+    - [Thai](https://github.com/jwasham/coding-interview-university/issues/156)
 
-Esse é o meu plano de estudo mensal para ir de desenvolvedor web (autodidata, sem formação em Ciência da Computação) à engenheiro de software para uma grande empresa.
+## นี่คืออะไร ?
 
-![Programando no quadro branco - do Vale do Silício da HBO](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
+นี่เป็นแผนการศึกษาหลายเดือนของผมจากนักพัฒนาเว็บไซต์ (ด้วยการศึกษาด้วยตัวเอง โดยไม่ได้จบวิทยาการคอมพิวเตอร์) เพื่อจะเป็นวิศวกรซอฟต์แวร์ในบริษัทขนาดใหญ่ที่หลายๆ คนต้องการเข้าทำงานด้วย
 
-Essa longa lista foi extraída e expandida a partir das **anotações de treinamento da Google**, então essas são as coisas que você precisa saber.
-Eu adicionei alguns itens extras no final que podem aparecer na entrevista ou serem úteis para resolver um problema. Muitos itens são da obra “[Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)” (Consiga aquele trabalho na Google) de Steve Yegge’s e às vezes são expressados palavra-por-palavra nas anotações de treinamento da Google.
+![Coding at the whiteboard - from HBO's Silicon Valley](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
 
-Isso é direcionado à **engenheiros de software novos** ou àqueles que estão migrando de desenvolvimento de software/web para engenharia de software (onde conhecimento de ciência da computação é necessário). Se você tem vários anos de experiência e está alegando muitos anos de experiência com engenharia de software, pode esperar por uma entrevista mais difícil.
+บทความนี้สำหรับคนที่อยากเป็น **วิศวกรซอฟต์แวร์** หรือต้องการเปลี่ยนมาจากนักพัฒนาซอฟต์แวร์หรือนักพัฒนาเว็บไซด์มาเป็นวิศวกรซอฟต์แวร์ (ผู้ซึ่งมีความรู้ความเข้าใจลึกซึ่งในหลักการของวิทยาการคอมพิวเตอร์) ถ้าคุณมีประสบการณ์หลายปีและมั่นใจในประสบการณ์การเป็นวิศวกรซอฟต์แวร์ของคุณ จะได้เจอการสัมภาษณ์ที่ยากขึ้นแน่นอน
 
-Se você tem vários anos de experiência com desenvolvimento de software/web, observe que grandes empresas como Google, Amazon, Facebook e Microsoft consideram engenharia de software como algo distinto de desenvolvimento de software/web e elas requerem conhecimento de ciência da computação.
+ถ้าคุณมีประสบการณ์การพัฒนาซอฟต์แวร์หรือเว็บไซต์มาหลายปี แต่ในบริษัทซอฟต์แวร์ขนาดใหญ่ของโลกอย่าง Google Amazon Facebook และ Microsoft มองการพัฒนาซอฟต์แวร์ของวิศวกรซอฟต์แวร์ที่ต่างกันออกไปจากการพัฒนาซอฟต์แวร์หรือเว็บไซต์โดยทั่วๆไป และบริษัทที่กล่าวมานี้ก็ต้องการความรู้ทางวิทยาการคอมพิวเตอร์ที่เข้มข้นอย่างมาก
 
-Se você quer ser um engenheiro de confiabilidade ou engenheiro de sistemas, estude mais da lista opcional (rede, segurança).
+ถ้าคุณต้องการเป็นวิศวกรคุณภาพ หรือวิศวกรระบบ คุณอาจจะต้องศึกษาเพิ่มเติมในรายการเพิ่มเติม (ระบบเครือข่าย, ระบบความปลอดภัย)
+
 
 ---
 
-## Table of Contents
+## ตารางสารบัญ
 
-- [O que é isso?](#o-que-é-isso)
-- [Por que usar?](#por-que-usar)
-- [Como usar?](#como-usar)
-- [Não ache que você não é inteligente o suficiente](#não-ache-que-você-não-é-inteligente-o-suficiente)
-- [Sobre os recursos em vídeo](#sobre-os-recursos-em-vídeo)
-- [Processo de Entrevista e Preparação Geral para a Entrevista](#processo-de-entrevista-e-preparação-geral-para-a-entrevista)
-- [Escolha Uma Linguagem para a Entrevista](#escolha-uma-linguagem-para-a-entrevista)
-- [Lista de Livros](#lista-de-livros)
-- [Antes de começar](#antes-de-começar)
-- [O que você não verá](#o-que-você-não-verá)
-- [The Daily Plan](#the-daily-plan)
-- [Conhecimento Prévio](#conhecimento-prévio)
-- [Complexidade Algorítmica / Big-O / Análise assintótica](#complexidade-algorítmica--big-o--análise-assintótica)
-- [Estrutura de Dados](#estrutura-de-dados)
-    - [Arrays](#arrays)
-    - [Linked Lists](#linked-lists)
-    - [Stack](#stack)
-    - [Queue](#queue)
-    - [Hash table](#hash-table)
-- [Mais Conhecimento](#mais-conhecimento)
-    - [Binary search](#binary-search)
-    - [Bitwise operations](#bitwise-operations)
-- [Trees](#trees)
-    - [Trees - Notes & Background](#trees---notes--background)
-    - [Binary search trees: BSTs](#binary-search-trees-bsts)
-    - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
-    - balanced search trees (general concept, not details)
-    - traversals: preorder, inorder, postorder, BFS, DFS
-- [Sorting](#sorting)
-    - selection
-    - insertion
-    - heapsort
-    - quicksort
-    - merge sort
-- [Graphs](#graphs)
-    - directed
-    - undirected
-    - adjacency matrix
-    - adjacency list
-    - traversals: BFS, DFS
-- [Even More Knowledge](#even-more-knowledge)
-    - [Recursion](#recursion)
-    - [Dynamic Programming](#dynamic-programming)
-    - [Object-Oriented Programming](#object-oriented-programming)
-    - [Design Patterns](#design-patterns)
-    - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
-    - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
-    - [Caches](#caches)
-    - [Processes and Threads](#processes-and-threads)
-    - [Papers](#papers)
-    - [Testing](#testing)
-    - [Scheduling](#scheduling)
-    - [Implement system routines](#implement-system-routines)
-    - [String searching & manipulations](#string-searching--manipulations)
-    - [Tries](#tries)
-    - [Floating Point Numbers](#floating-point-numbers)
-    - [Unicode](#unicode)
-    - [Endianness](#endianness)
-- [Networking](#networking)
-- [System Design, Scalability, Data Handling](#system-design-scalability-data-handling) (if you have 4+ years experience)
-- [Final Review](#final-review)
-- [Coding Question Practice](#coding-question-practice)
-- [Coding exercises/challenges](#coding-exerciseschallenges)
-- [Once you're closer to the interview](#once-youre-closer-to-the-interview)
-- [Your Resume](#your-resume)
-- [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
-- [Have questions for the interviewer](#have-questions-for-the-interviewer)
-- [Once You've Got The Job](#once-youve-got-the-job)
+- [นี่คืออะไร?](#what-is-it)
+- [ทำไมต้องใช้?](#why-use-it)
+- [ใช้อย่างไร?](#how-to-use-it)
+- [ห้ามรู้สึกว่าคุณไม่ฉลาดพอ](#dont-feel-you-arent-smart-enough)
+- [เกี่ยวกับแหล่งที่มาของวีดีโอ](#about-video-resources)
+- [กระบวนการการสัมภาษณ์และการเตรียมตัว](#interview-process--general-interview-prep)
+- [เลือกภาษาสำหรับการสัมภาษณ์](#pick-one-language-for-the-interview)
+- [รายชื่อหนังสือ](#book-list)
+- [ก่อนที่จะเริ่มต้น](#before-you-get-started)
+- [อะไรที่ไม่ครอบคลุม](#what-you-wont-see-covered)
+- [ความรู้ที่ต้องมีมาก่อน](#prerequisite-knowledge)
+- [แผนของแต่ละวัน](#the-daily-plan)
+- [ความซับซ้อนของขั้นตอนวิธี / Big-O / การวิเคราะห์ Asymptotic](#algorithmic-complexity--big-o--asymptotic-analysis)
+- [โครงสร้างข้อมูล](#data-structures)
+    - [แถวลำดับ (Arrays)](#arrays)
+    - [รายการโยง (Linked Lists)](#linked-lists)
+    - [กองซ้อน (Stack)](#stack)
+    - [แถวคอย (Queue)](#queue)
+    - [ตารางแฮซ (Hash table)](#hash-table)
+- [ความรู้เพิ่มเติม](#more-knowledge)
+    - [การค้นหาข้อมูลแบบทวิภาค (Binary search)](#binary-search)
+    - [ตัวดำเนินการแบบบิต (Bitwise operations)](#bitwise-operations)
+- [ต้นไม้(โครงสร้างข้อมูล)](#trees)
+    - [ต้นไม้ - คำอธิบายและปรวัติความเป็นมา](#trees---notes--background)
+    - [ต้นไม้ค้นหาแบบทวิภาค (Binary search trees): BSTs](#binary-search-trees-bsts)
+    - [ฮีป (Heap) / แถวคอยลำดับความสำคัญ (Priority Queue) / ฮีปแบบวิภาค (Binary Heap)](#heap--priority-queue--binary-heap)
+    - ตารางค้นหาสมดุล (balanced search trees) (แนวคิดทั่วไป ไม่ได้ลงรายละเอียด)
+    - การแวะผ่านต้นไม้ (traversals): ก่อนลำดับ, ตามลำดับ, กลังลำดับ, BFS, DFS
+- [การเรียงลำดับ](#sorting)
+    - แบบเลือก (selection)
+    - แบบแทรก (insertion)
+    - แบบฮีป (heapsort)
+    - แบบเร็ว (quicksort)
+    - แบบผสาน (merge sort)
+- [กราฟ (Graphs)](#graphs)
+    - กราฟแบบมีทิศทาง (directed)
+    - กราฟแบบไม่มีทิศทาง (undirected)
+    - เมตริกซ์ประชิด (adjacency matrix)
+    - รายการประชิด (adjacency list)
+    - การแวะผ่านกราฟ: BFS, DFS
+- [ความรู้เพิ่มเติม](#even-more-knowledge)
+    - [การเรียกซ้ำ](#recursion)
+    - [การโปรแกรมแบบพลวัต](#dynamic-programming)
+    - [การเขียนโปรแกรมเชิงวัตถุ](#object-oriented-programming)
+    - [แบบแผนการออกแบบ](#design-patterns)
+    - [คณิตศาสตร์เชิงการจัด (n เลือก k) & ความน่าจะเป็น](#combinatorics-n-choose-k--probability)
+    - [กลุ่มปัญหาเอ็นพี (NP), เอ็นพีบริบูรณ์ (NP-Complete) และ ระเบียบวิธีการประมาณการ](#np-np-complete-and-approximation-algorithms)
+    - [แคช](#caches)
+    - [กระบวนการ และ เทรด](#processes-and-threads)
+    - [บทความตีพิมพ์](#papers)
+    - [การทดสอบ](#testing)
+    - [การจัดการลำดับการทำงาน](#scheduling)
+    - [การพัฒนาคำสั่งย่อยของระบบ](#implement-system-routines)
+    - [การค้นหาสตริง & การจัดการ](#string-searching--manipulations)
+    - [ลำดับชั้น](#tries)
+    - [ตัวเลขที่มีจุดทศนิยม](#floating-point-numbers)
+    - [ยูนิโค้ด](#unicode)
+    - [การจัดเรียงข้อมูล](#endianness)
+- [ระบบเครือข่าย](#networking)
+- [การออกแบบระบบ, การขยายได้ของระบบ, การจัดการข้อมูล](#system-design-scalability-data-handling) (ถ้าคุณมีประสบการณ์มากกว่า 4 ปี)
+- [บททบทวนสุดท้าย](#final-review)
+- [การฝึกฝนกับคำถามของการเขียนโปรแกรม](#coding-question-practice)
+- [แบบฝึกหัดและความท้ายทายของการเขียนโปรแกรม](#coding-exerciseschallenges)
+- [เมื่อใกล้ถึงวันสัมภาษณ์งาน](#once-youre-closer-to-the-interview)
+- [ประวัติย่อของคุณ](#your-resume)
+- [สิ่งที่คิดไว้เมื่อวันสัมภาษณ์มาถึง](#be-thinking-of-for-when-the-interview-comes)
+- [คำถามสำหรับผู้สัมภาษณ์](#have-questions-for-the-interviewer)
+- [เมื่อคุณได้งาน](#once-youve-got-the-job)
 
----------------- Tudo abaixo é opcional ----------------
+---------------- รายการด้านล่างนี้เป็นรายการตัวเลือก ----------------
 
-- [Additional Books](#additional-books)
-- [Additional Learning](#additional-learning)
-    - [Compilers](#compilers)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
-    - [Information theory](#information-theory)
-    - [Parity & Hamming Code](#parity--hamming-code)
-    - [Entropy](#entropy)
-    - [Cryptography](#cryptography)
-    - [Compression](#compression)
-    - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
-    - [Parallel Programming](#parallel-programming)
-    - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
+- [หนังสือเพิ่มเติม](#additional-books)
+- [การเรียนรู้เพิ่มเติม](#additional-learning)
+    - [คอมไพเลอร์](#compilers)
+    - [Emacs และ vi(m)](#emacs-and-vim)
+    - [เครื่องมือคำสั่งของยูนิก](#unix-command-line-tools)
+    - [ทฤษฏีสารสนเทศ](#information-theory)
+    - [ความเสมอกัน & รหัสแฮมมิ่ง](#parity--hamming-code)
+    - [หน่อววัดการสุ่มตัวอย่าง](#entropy)
+    - [วิทยาการเข้าหรัสลับ](#cryptography)
+    - [การบีบอัดข้อมูล](#compression)
+    - [ระบบรักษาความปลอดภัยคอมพิวเตอร์](#computer-security)
+    - [หน่วยจัดเก็บขยะข้อมูลไม่ได้ใช้](#garbage-collection)
+    - [การโปรแกรมแบบขนาน](#parallel-programming)
+    - [การส่งข้อความ, การทำให้เป็นอันดับ, และระบบการคอย](#messaging-serialization-and-queueing-systems)
     - [A*](#a)
-    - [Fast Fourier Transform](#fast-fourier-transform)
-    - [Bloom Filter](#bloom-filter)
+    - [การแปลงฟูเรียร์](#fast-fourier-transform)
+    - [ตัวกรองของบลูม](#bloom-filter)
     - [HyperLogLog](#hyperloglog)
-    - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
-    - [Augmented Data Structures](#augmented-data-structures)
-    - [N-ary (K-ary, M-ary) trees](#n-ary-k-ary-m-ary-trees)
-    - [Balanced search trees](#balanced-search-trees)
-        - AVL trees
-        - Splay trees
-        - Red/black trees
-        - 2-3 search trees
-        - 2-3-4 Trees (aka 2-4 trees)
-        - N-ary (K-ary, M-ary) trees
-        - B-Trees
-    - [k-D Trees](#k-d-trees)
-    - [Skip lists](#skip-lists)
-    - [Network Flows](#network-flows)
-    - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
-    - [Math for Fast Processing](#math-for-fast-processing)
-    - [Treap](#treap)
-    - [Linear Programming](#linear-programming)
-    - [Geometry, Convex hull](#geometry-convex-hull)
-    - [Discrete math](#discrete-math)
-    - [Machine Learning](#machine-learning)
-- [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
-- [Video Series](#video-series)
-- [Computer Science Courses](#computer-science-courses)
+    - [แอลเอสเอส (Locality-Sensitive hashing)](#locality-sensitive-hashing)
+    - [ต้นไม้ของ van Emde Boas](#van-emde-boas-trees)
+    - [โครงสร้างข้อมูลออกเมนต์](#augmented-data-structures)
+    - [ต้นไม้แบบ N-ary (K-ary, M-ary)](#n-ary-k-ary-m-ary-trees)
+    - [ต้นไม้การค้นหาที่สมดุล](#balanced-search-trees)
+    - [ต้นไม้แบบ k-D](#k-d-trees)
+    - [การข้ามรายการ](#skip-lists)
+    - [กระแสเครือข่าย](#network-flows)
+    - [โครงสร้างข้อมูลไม่มีส่วนร่วม และ ยูเนียนและค้นหา](#disjoint-sets--union-find)
+    - [คณิตศาสต์สำหรับการประมวณผลอย่างรวดเร็ว](#math-for-fast-processing)
+    - [ทรีพ](#treap)
+    - [การโปรแกรมเชิงเส้น](#linear-programming)
+    - [เรขาคณิต, คอนเว็กซ์อัล](#geometry-convex-hull)
+    - [คณิตศาสตร์ดีสครีต](#discrete-math)
+    - [การเรียนรู้ของเครื่อง](#machine-learning)
+- [รายละเอียดเพิ่มเติมของบางหัวข้อ](#additional-detail-on-some-subjects)
+- [ชุดของวีดีโอเพื่อการเรียนรู้เพิ่มเติม](#video-series)
+- [รายวิชาของวิทยาการคอมพิวเตอร์](#computer-science-courses)
 
 ---
 
-## Por que usar?
+## Why use it?
 
-Quando eu comecei esse projeto, eu não sabia diferenciar memória dinâmica de memória estática, não sabia notação Big-O, árvores, ou como percorrer um gráfico. Se eu tivesse que escrever um algoritmo de ordenação, eu posso te dizer que ele não seria muito bom.
-Todas as estruturas de dados que eu já usei eram construídas dentro da linguagem, e eu não sabia como elas funcionavam por baixo dos panos. Eu nunca tive que gerenciar memória a não ser que um processo que eu estava rodando desse um erro de "memória insuficiente", nesse caso eu teria que dar um jeito. Eu já usei alguns arrays multidimensionais na minha vida e milhares de arrays associativos, mas eu nunca criei estruturas de dados do zero.
+When I started this project, I didn't know a stack from a heap, didn't know Big-O anything, anything about trees, or how to
+traverse a graph. If I had to code a sorting algorithm, I can tell ya it wouldn't have been very good.
+Every data structure I've ever used was built into the language, and I didn't know how they worked
+under the hood at all. I've never had to manage memory unless a process I was running would give an "out of
+memory" error, and then I'd have to find a workaround. I've used a few multidimensional arrays in my life and
+thousands of associative arrays, but I've never created data structures from scratch.
 
-É um longo plano. Você vai levar meses. Se você já é familiarizado com muitas dessas coisas, você vai precisar de muito menos tempo. 
+It's a long plan. It may take you months. If you are familiar with a lot of this already it will take you a lot less time.
 
-## Como usar
+## How to use it
 
-Tudo abaixo é um esboço, e você deve abordar os itens em ordem de cima para baixo.
+Everything below is an outline, and you should tackle the items in order from top to bottom.
 
-Eu estou usando a sintaxe de markdown especial do Github, incluindo listas de tarefas para verificar o progresso.
+I'm using Github's special markdown flavor, including tasks lists to check progress.
 
-**Crie um novo branch para você verificar itens assim, apenas coloque um x entre os colchetes: [x]**
+**Create a new branch so you can check items like this, just put an x in the brackets: [x]**
 
 
-    Bifurque (fork) um branch e siga os comandos abaixo
+    Fork a branch and follow the commands below
 
 `git checkout -b progress`
 
@@ -172,7 +181,7 @@ Eu estou usando a sintaxe de markdown especial do Github, incluindo listas de ta
 
 `git fetch --all`
 
-    Marque todas as caixas com X depois que você completar suas alterações
+    Mark all boxes with X after you completed your changes
 
 `git add . `
 
@@ -182,90 +191,87 @@ Eu estou usando a sintaxe de markdown especial do Github, incluindo listas de ta
 
 `git push --force `
 
-[Mais sobre a sintaxe de markdown especial do Github](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
+[More about Github-flavored markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
 
-## Não ache que você não é inteligente o suficiente
-- Engenheiros de software bem sucedidos são inteligentes, mas muitos são inseguros quanto à própria inteligência.
-- [O mito do Programador Gênio](https://www.youtube.com/watch?v=0SARbwvhupQ)
-- [É perigoso ir sozinho: Batalhando os monstros invisíveis na indústria de Tecnologia](https://www.youtube.com/watch?v=1i8ylq4j_EY)
+## Don't feel you aren't smart enough
+- Successful software engineers are smart, but many have an insecurity that they aren't smart enough.
+- [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
+- [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
 
-## Sobre os recursos em vídeo
+## About Video Resources
 
-Alguns vídeos estão disponíveis somente ao ingressar em um curso no Coursera, EdX, ou Lynda.com. Esses são chamados de MOOCs (Curso Online Aberto e Massivo).
-Às vezes as aulas não estão em sessão, nesse caso você terá que esperar alguns meses, portanto não terá acesso até lá. Os cursos da Lynda.com não são gratuitos.
+Some videos are available only by enrolling in a Coursera, EdX, or Lynda.com class. These are called MOOCs.
+Sometimes the classes are not in session so you have to wait a couple of months, so you have no access. Lynda.com courses are not free.
 
-    Eu agradeceria a ajuda de vocês em adicionar fontes públicas gratuitas e sempre disponíveis, como vídeos do YouTube para acompanhar os vídeos de curso online.
-    Eu gosto de usar palestras de universidades;
+    I'd appreciate your help to add free and always-available public sources, such as YouTube videos to accompany the online course videos.
+    I like using university lectures.
 
 
-## Processo de Entrevista e Preparação Geral para a Entrevista
+## Interview Process & General Interview Prep
 
 - [ ] [ABC: Always Be Coding](https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4)
 - [ ] [Whiteboarding](https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1)
 - [ ] [Effective Whiteboarding during Programming Interviews](http://www.coderust.com/blog/2014/04/10/effective-whiteboarding-during-programming-interviews/)
-- [ ] [Demystifying Tech Recruiting](https://www.youtube.com/watch?v=N233T0epWTs)
 - [ ] Cracking The Coding Interview Set 1:
     - [ ] [Gayle L McDowell - Cracking The Coding Interview (video)](https://www.youtube.com/watch?v=rEJzOhC5ZtQ)
     - [ ] [Cracking the Coding Interview with Author Gayle Laakmann McDowell (video)](https://www.youtube.com/watch?v=aClxtDcdpsQ)
 - [ ] How to Get a Job at the Big 4:
     - [ ] [How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft (video)](https://www.youtube.com/watch?v=YJZCUhxNCv8)
 
-- [ ] Prep Courses:
+- [ ] Prep Course:
     - [ ] [Software Engineer Interview Unleashed (paid course)](https://www.udemy.com/software-engineer-interview-unleashed):
         - Learn how to make yourself ready for software engineer interviews from a former Google interviewer.
-    - [ ] [Python for Data Structures, Algorithms, and Interviews! (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/): 
-        - A Python centric interview prep course which covers data structures, algorithms, mock interviews and much more.
 
-## Escolha Uma Linguagem para a Entrevista
+## Pick One Language for the Interview
 
-Você pode escolher uma linguagem com a qual você esteja confortável para fazer a parte de programação (parte prática) da entrevista, mas para grandes empresas, essas são ótimas opções:
+You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
 
 - C++
 - Java
 - Python
 
-Você também poderia usar essas, mas dê uma lida por aí antes. Podem haver avisos:
+You could also use these, but read around first. There may be caveats:
 
 - JavaScript
 - Ruby
 
-Você precisa estar confortável com a linguagem e ser bem informado.
+You need to be very comfortable in the language and be knowledgeable.
 
-Leia mais sobre as escolhas:
+Read more about choices:
 - http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/
 - http://blog.codingforinterviews.com/best-programming-language-jobs/
 
-[Veja recursos de linguagens aqui](programming-language-resources.md)
+[See language resources here](programming-language-resources.md)
 
-Você vai ver aprendizado de C, C++ e Python incluído abaixo, porque é o que estou aprendendo. Tem alguns livros envolvidos, veja no final.
+You'll see some C, C++, and Python learning included below, because I'm learning. There are a few books involved, see the bottom.
 
-## Lista de Livros
+## Book List
 
-Essa é uma lista menor comparada à que eu usei. Está abreviado para economizar seu tempo.
+This is a shorter list than what I used. This is abbreviated to save you time.
 
-### Preparação para a Entrevista
+### Interview Prep
 
-- [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html) (Entrevistas de Programação Expostas: Segredos para Conseguir Seu Próximo Emprego, 2ª Edição)
-    - respostas em C++ e Java
-    - esse é um bom aquecimento para o Cracking the Coding Interview (Decifrando a Entrevista de Programação)
-    - não é muito difícil, a maioria dos problemas poderão ser mais fáceis que aqueles que você verá em uma entrevista (de acordo com o que li)
-- [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/) (Decifrando a Entrevista de Programação).
-    - respostas em Java
+- [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
+    - answers in C++ and Java
+    - this is a good warm-up for Cracking the Coding Interview
+    - not too difficult, most problems may be easier than what you'll see in an interview (from what I've read)
+- [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
+    - answers in Java
 
-Se você tem muito tempo sobrando:
+If you have tons of extra time:
 
-- [ ] [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836) (Elementos de Entrevistas de Programação (Versão C++))
-- [ ] [Elements of Programming Interviews (Java version)](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/) (Elementos de Entrevistas de Programação (Versão Java))
+- [ ] [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
+- [ ] [Elements of Programming Interviews (Java version)](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/)
 
-### Arquitetura de Computador
+### Computer Architecture
 
-Se estiver com pouco tempo:
+If short on time:
 
-- [ ] [Write Great Code: Volume 1: Understanding the Machine](https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038) (Escreva um Excelente Código: Volume 1: Compreendendo a Máquina)
-    - O livro foi publicado em 2004, e está meio vencido, mas é um recurso maravilhoso para compreender um computador resumidamente.
-    - O autor inventou HLA (High-level Assembly ou, no português, Assembly de alto nível), então considere as menções e exemplos em HLA com cautela. Não é usado amplamente, mas contém exemplos decentes de como o assembly funciona.
-    - Esses capítulos valem a pena serem lidos para lhe dar uma boa base:
-        - Chapter 2 - Numeric Representation (Capítulo 2 - Representação Numérica)
+- [ ] [Write Great Code: Volume 1: Understanding the Machine](https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038)
+    - The book was published in 2004, and is somewhat outdated, but it's a terrific resource for understanding a computer in brief.
+    - The author invented HLA, so take mentions and examples in HLA with a grain of salt. Not widely used, but decent examples of what assembly looks like.
+    - These chapters are worth the read to give you a nice foundation:
+        - Chapter 2 - Numeric Representation
         - Chapter 3 - Binary Arithmetic and Bit Operations
         - Chapter 4 - Floating-Point Representation
         - Chapter 5 - Character Representation
@@ -273,148 +279,151 @@ Se estiver com pouco tempo:
         - Chapter 7 - Composite Data Types and Memory Objects
         - Chapter 9 - CPU Architecture
         - Chapter 10 - Instruction Set Architecture
-        - Chapter 11 - Memory Architecture and Organization 
+        - Chapter 11 - Memory Architecture and Organization
 
-Se você tem mais tempo (eu quero esse livro):
+If you have more time (I want this book):
 
-- [ ] [Computer Architecture, Fifth Edition: A Quantitative Approach](https://www.amazon.com/dp/012383872X/) (Arquitetura de Computador, Quinta Edição: Uma Abordagem Quantitativa)
-    - Se quiser uma versão mais rica e atualizada (2011), mas com um tratamento mais longo
+- [ ] [Computer Architecture, Fifth Edition: A Quantitative Approach](https://www.amazon.com/dp/012383872X/)
+    - For a richer, more up-to-date (2011), but longer treatment
 
-### Específico de Linguagem
+### Language Specific
 
-**Você precisa escolher uma linguagem para a entrevista (veja acima).** Aqui estão minhas recomendações por linguagem. Eu não tenho recursos para todas as linguagens. Contribuições são bem-vindas.
+**You need to choose a language for the interview (see above).** Here are my recommendations by language. I don't have resources for all languages. I welcome additions.
 
-Se você ler um desses, você deverá ter todo conhecimento de estrutura de dados e algoritmos que precisará para começar a resolver problemas de programação. 
-**Você pode pular todas as aulas em vídeo nesse projeto**, a não ser que você queira uma revisão.
+If you read though one of these, you should have all the data structures and algorithms knowledge you'll need to start doing coding problems.
+**You can skip all the video lectures in this project**, unless you'd like a review.
 
-[Recursos adicionais específicos a cada linguagem aqui.](programming-language-resources.md)
+[Additional language-specific resources here.](programming-language-resources.md)
 
 ### C++
 
-Eu ainda não li esses dois, mas eles são muito bem avaliados e escritos por Sedgewick. Ele é ótimo.
+I haven't read these two, but they are highly rated and written by Sedgewick. He's awesome.
 
-- [ ] [Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching](https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/) (Algoritmos em C++, Partes 1-4: Fundamentos, Estrutura de Dados, Ordenação, Busca).
-- [ ] [Algorithms in C++ Part 5: Graph Algorithms](https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/) (Algoritmos em C++ Parte 5: Algoritmos de Gráfico)
+- [ ] [Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching](https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/)
+- [ ] [Algorithms in C++ Part 5: Graph Algorithms](https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/)
 
-Se você tiver uma recomendação melhor para C++, por favor me informe. Busco por recursos completos. 
+If you have a better recommendation for C++, please let me know. Looking for a comprehensive resource.
 
 ### Java
 
-- [ ] [Algorithms (Sedgewick and Wayne)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/) (Algoritmos (Sedgewick e Wayne))
-    - vídeos com conteúdo do livro (e Sedgewick!):
-        - [Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?view=50&sort=dd&shelf_id=2) (Algoritmos I)
-        - [Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=3&view=50&sort=dd) (Algoritmos II)
+- [ ] [Algorithms (Sedgewick and Wayne)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
+    - videos with book content (and Sedgewick!):
+        - [Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?view=50&sort=dd&shelf_id=2)
+        - [Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=3&view=50&sort=dd)
 
-OU:
+OR:
 
-- [ ] [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/) (Estrutura de Dados e Algoritmos em Java)
-    - por Goodrich, Tamassia, Goldwasser
-    - usado como texo opcional para o curso introdutório de Ciência da Computação na Universidade da Califórnia em Berkeley
-    - veja o meu resumo sobre a versão em Python abaixo. Esse livro abrange os mesmos tópicos.
+- [ ] [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/)
+    - by Goodrich, Tamassia, Goldwasser
+    - used as optional text for CS intro course at UC Berkeley
+    - see my book report on the Python version below. This book covers the same topics.
 
 ### Python
 
-- [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/) (Estrutura de Dados e Algoritmos em Python)
-    - por Goodrich, Tamassia, Goldwasser
-    - Eu adorei esse livro. Ele cobriu tudo e mais.
-    - Código pythonico.
-    - meu brilhante resumo: https://startupnextdoor.com/book-report-data-structures-and-algorithms-in-python/
+- [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
+    - by Goodrich, Tamassia, Goldwasser
+    - I loved this book. It covered everything and more.
+    - Pythonic code
+    - my glowing book report: https://startupnextdoor.com/book-report-data-structures-and-algorithms-in-python/
 
 
-### Livros Opcionais
+### Optional Books
 
-**Algumas pessoas recomendam esses, mas eu acho que está além do necessário, a não ser que você tenha muitos anos de experiência em engenharia de software e está esperando por uma entrevista muito mais difícil:**
+**Some people recommend these, but I think it's going overboard, unless you have many years of software engineering experience and expect a much harder interview:**
 
-- [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena) (Manual de Design de Algoritmo)
-    - Como uma revisão e reconhecimento de problema
-    - A parte de catálogos de algoritmos está muito além da margem de dificuldade que você terá numa entrevista.
-    - Esse livro tem 2 partes:
-        - livro de aula sobre estrutura de dados e algoritmos
-            - prós:
-                - é uma boa revisão assim como qualquer texto de algoritmos seria
-                - boas estórias da experiência dele resolvendo problemas na indústria e na universidade
-                - exemplo de código em C
-            - contras:
-                - pode ser tão denso ou impenetrável quanto CLRS (Introdução a Algoritmos), e em alguns casos, CLRS pode ser uma alternativa melhor para alguns temas
-                - capítulos 7, 8 e 9 podem ser sofridos para acompanhar, já que alguns itens não são bem explicados ou requerem mais cérebro do que eu tenho
-                - não me entenda mal: Eu gosto de Skiena, do estilo de ensino dele, e maneirismos, mas pode não ser um material do tipo da universidade Stony Brook.
-        - catálogo de algoritmos
-            - essa é a verdadeira razão para você comprar esse livro.
-            - prestes a chegar nessa parte. Vou atualizar aqui assim que eu terminar de ler essa parte.
-    - Pode alugar no kindle
-    - Half.com é um ótimo recurso para livros com bons preços.
-    - Respostas:
-        - [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition)) (Soluções)
-        - [Solutions](http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/) (Soluções)
+- [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
+    - As a review and problem recognition
+    - The algorithm catalog portion is well beyond the scope of difficulty you'll get in an interview.
+    - This book has 2 parts:
+        - class textbook on data structures and algorithms
+            - pros:
+                - is a good review as any algorithms textbook would be
+                - nice stories from his experiences solving problems in industry and academia
+                - code examples in C
+            - cons:
+                - can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
+                - chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
+                - don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material.
+        - algorithm catalog:
+            - this is the real reason you buy this book.
+            - about to get to this part. Will update here once I've made my way through it.
+    - Can rent it on kindle
+    - Half.com is a great resource for textbooks at good prices.
+    - Answers:
+        - [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
+        - [Solutions](http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/)
     - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
 
-- [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844) (Introdução à Algoritmos)
-    - **Importante:** Ler esse livro só terá um valor limitado. Esse livro é ótimo para revisão de algoritmos e estrutura de dados, mas não irá te ensinar a escrever um bom código. Você deve ser capaz de programar uma solução decente eficientemente.
-    - Half.com é um ótimo recurso para livros com bons preços.
-    - também conhecido como CLR, às vezes CLRS, porque Stein estava atrasado para o negócio
+- [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
+    - Half.com is a great resource for textbooks at good prices.
+    - aka CLR, sometimes CLRS, because Stein was late to the game
 
-- [ ] [Programming Pearls](http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880) (Pérolas de Programação)
-    - Os primeiros capítulos apresentam solução inteligentes para problemas de programação (alguns bem velhos usando suporte magnético) mas
-      isso é só uma introdução. Esse é um guia sobre design e arquitetura de programa, parecido com Code Complete, mas muito mais curto.
+- [ ] [Programming Pearls](http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880)
+    - The first couple of chapters present clever solutions to programming problems (some very old using data tape) but
+      that is just an intro. This a guidebook on program design and architecture, much like Code Complete, but much shorter.
 
-- ~~"Algorithms and Programming: Problems and Solutions" by Shen ("Algoritmos e Programação: Problemas e Soluções" por Shen)~~
-    - Um bom livro, mas depois de trabalhar nos problemas em várias páginas eu fiquei frustrado com o Pascal, loops do...while, arrays de 1 índice (index), e resultados de satisfação pós-condição pouco claros.  
-    - Prefiro gastar tempo em problemas de programação de outro livro oi problemas de programação online.
+- ~~"Algorithms and Programming: Problems and Solutions" by Shen~~
+    - A fine book, but after working through problems on several pages I got frustrated with the Pascal, do while loops, 1-indexed arrays, and unclear post-condition satisfaction results.
+    - Would rather spend time on coding problems from another book or online coding problems.
 
 
-## Antes de começar
+## Before you Get Started
 
-Essa lista cresceu por longos meses, e sim, ela meio que saiu do controle.
+This list grew over many months, and yes, it kind of got out of hand.
 
-Aqui estão alguns erros que eu cometi para que você tenha uma experiência melhor.
+Here are some mistakes I made so you'll have a better experience.
 
-### 1. Você não se lembrará disso tudo
+### 1. You Won't Remember it All
 
-Assisti a horas de vídeos e fiz anotações e meses depois havia muito que eu não me lembrava. Eu passei 3 dias revisando minhas anotaçes e fazendo flashcards para que eu pudesse relembrar.
+I watched hours of videos and took copious notes, and months later there was much I didn't remember. I spent 3 days going
+through my notes and making flashcards so I could review.
 
-Por favor, leia para que você não cometa os meus erros:
+Read please so you won't make my mistakes:
 
 [Retaining Computer Science Knowledge](https://startupnextdoor.com/retaining-computer-science-knowledge/)
 
 ### 2. Use Flashcards
 
-Para solucionar o problema, eu fiz um pequeno site de flashcards onde eu poderia adicionar dois tipos de flashcards: genérico e código.  
-Cada cartão tem formatação diferente.
+To solve the problem, I made a little flashcards site where I could add flashcards of 2 types: general and code.
+Each card has different formatting.
 
-Eu fiz um website focado em mobile para que eu pudesse rever no meu celular, tablet, onde quer que eu esteja.
+I made a mobile-first website so I could review on my phone and tablet, wherever I am.
 
-Faça o seu próprio, grátis:
+Make your own for free:
 
-- [Repositório de flashcards](https://github.com/jwasham/computer-science-flash-cards)
-- [Minha base de dados de flashcards (antigo - 1200 cartões)](https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham.db): 
-- [Minha base de dados de flashcards (novo - 1800 cartões)](https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham-extreme.db):
+- [Flashcards site repo](https://github.com/jwasham/computer-science-flash-cards)
+- [My flash cards database (old - 1200 cards)](https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham.db):
+- [My flash cards database (new - 1800 cards)](https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham-extreme.db):
 
-Tenha em mente que eu exagerei e tenho cartas abrangendo desde linguagem assembly e trivialidades de Python até aprendizado de máquina e estatísticas. É demais para o que é requerido. 
+Keep in mind I went overboard and have cards covering everything from assembly language and Python trivia to machine learning and statistics. It's way too much for what's required.
 
-**Nota:** A primeira vez que você reconhece que sabe a resposta, não a marque como conhecida. Você tem que ver o mesmo cartão e respondê-lo várias vezes corretamente antes de realmente conhecê-lo. A repetição colocará esse conhecimento mais aprodundado em seu cérebro.
+**Note on flashcards:** The first time you recognize you know the answer, don't mark it as known. You have to see the
+same card and answer it several times correctly before you really know it. Repetition will put that knowledge deeper in
+your brain.
 
-Uma alternativa ao uso do meu site de flashcards é [Anki](http://ankisrs.net/), que me foi recomendado várias vezes. Ele usa um sistema de repetição para ajuda-lo a se lembrar.
-É fácil de usar, está disponível em todas as plataformas e possui um sistema de sincronização em nuvem. Ele custa 25 dólares no iOS, mas é gratuito em outras plataformas.
+An alternative to using my flashcard site is [Anki](http://ankisrs.net/), which has been recommended to me numerous times. It uses a repetition system to help you remember.
+It's user-friendly, available on all platforms and has a cloud sync system. It costs $25 on iOS but is free on other platforms.
 
-Meu banco de dados de flashcards em formato Anki: https://ankiweb.net/shared/info/25173560 (obrigado [@xiewenya](https://github.com/xiewenya))
+My flashcard database in Anki format: https://ankiweb.net/shared/info/25173560 (thanks [@xiewenya](https://github.com/xiewenya))
 
-### 3. Reveja, Reveja e Reveja
+### 3. Review, review, review
 
-Eu mantenho um conjunto de anotações em ASCII, OSI stack, Notações Big-O, e muito mais. Eu os estudo quando tenho algum tempo livre.
+I keep a set of cheat sheets on ASCII, OSI stack, Big-O notations, and more. I study them when I have some spare time.
 
-Faça uma pausa durante os problemas de programação por meia hora e passe por seus flashcards.
+Take a break from programming problems for a half hour and go through your flashcards.
 
-### 4. Foco
+### 4. Focus
 
-Há um monte de distrações que podem ocupar um tempo valioso. Foco e concentração são difíceis.
+There are a lot of distractions that can take up valuable time. Focus and concentration are hard.
 
-## O que você não verá 
+## What you won't see covered
 
-Essas são tecnologias predominantes, mas não são partes desse plano de estudo:
+These are prevalent technologies but not part of this study plan:
 
 - SQL
 - Javascript
-- HTML, CSS, e outras tecnologias de front-end
+- HTML, CSS, and other front-end technologies
 
 ## The Daily Plan
 
@@ -446,44 +455,44 @@ You don't need to memorize the guts of every algorithm.
 
 Write code on a whiteboard or paper, not a computer. Test with some sample inputs. Then test it out on a computer.
 
-## Conhecimento Prévio
+## Prerequisite Knowledge
 
-- [ ] **Aprenda C**
-    - C está em todo lugar. Você vai ver exemplos em livros, aulas, vídeos, em todo lugar enquanto você estiver estudando.
-    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628) (Linguagem de Programação C, Vol 2)
-        - Esse é um livro curto, mas vai te ajudar a ter um ótimo domínio da linguagem C e se você praticar um pouco 
-            você irá se tornar proficiente rapidamente. Entender C te ajuda a entender como os programas e a memória funcionam.
-        - [answers to questions](https://github.com/lekkas/c-algorithms) (respostas para as questões) 
+- [ ] **Learn C**
+    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.
+    - [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)
+        - This is a short book, but it will give you a great handle on the C language and if you practice it a little
+            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.
+        - [answers to questions](https://github.com/lekkas/c-algorithms)
 
-- [ ] **Como computadores processam um programa:**
-    - [ ] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA) (Como uma CPU executa um programa (vídeo))
-    - [ ] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE) (Instruções de Código de Máquina (vídeo))
+- [ ] **How computers process a program:**
+    - [ ] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA)
+    - [ ] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE)
 
-## Complexidade Algorítmica / Big-O / Análise assintótica
-- nada para implementar
-- [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4) (Harvard CS50 - Notação Assintótica (vídeo))
-- [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU) (Notações Big-O (rápido tutorial geral) (vídeo))
-- [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN) (Notação Big-O (e Omega e Theta) - melhor explicação matemática (vídeo))
+## Algorithmic complexity / Big-O / Asymptotic analysis
+- nothing to implement
+- [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
+- [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
+- [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] Skiena:
     - [video](https://www.youtube.com/watch?v=gSyDMtdPNpU&index=2&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
     - [slides](http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf)
-- [ ] [A Gentle Introduction to Algorithm Complexity Analysis](http://discrete.gr/complexity/) (Uma Introdução Gentil a Análise de Complexidade Algoritmica)
-- [ ] [Orders of Growth (video)](https://class.coursera.org/algorithmicthink1-004/lecture/59) (Ordens de Crescimento (vídeo))
-- [ ] [Asymptotics (video)](https://class.coursera.org/algorithmicthink1-004/lecture/61) (Assintóticas (vídeo))
-- [ ] [UC Berkeley Big O (video)](https://youtu.be/VIS4YDpuP98) (Big-O - Universidade da Califórnia em Berkeley (vídeo))
-- [ ] [UC Berkeley Big Omega (video)](https://youtu.be/ca3e7UVmeUc) (Grande Omega - Universidade da Califórnia em Berkeley (vídeo))
-- [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN) (Análise Amortizada (vídeo))
-- [ ] [Illustrating "Big O" (video)](https://class.coursera.org/algorithmicthink1-004/lecture/63) (Ilustrando "Big-O" (vídeo))
-- [ ] TopCoder (inclui relações de recorrência e teorema mestre):
-    - [Computational Complexity: Section 1](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/) (Complexidade Computacional: Seção 1)
-    - [Computational Complexity: Section 2](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/) (Complexidade Computacional: Seção 2)
-- [ ] [Cheat sheet](http://bigocheatsheet.com/) (Folha de Consultas)
+- [ ] [A Gentle Introduction to Algorithm Complexity Analysis](http://discrete.gr/complexity/)
+- [ ] [Orders of Growth (video)](https://class.coursera.org/algorithmicthink1-004/lecture/59)
+- [ ] [Asymptotics (video)](https://class.coursera.org/algorithmicthink1-004/lecture/61)
+- [ ] [UC Berkeley Big O (video)](https://youtu.be/VIS4YDpuP98)
+- [ ] [UC Berkeley Big Omega (video)](https://youtu.be/ca3e7UVmeUc)
+- [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
+- [ ] [Illustrating "Big O" (video)](https://class.coursera.org/algorithmicthink1-004/lecture/63)
+- [ ] TopCoder (includes recurrence relations and master theorem):
+    - [Computational Complexity: Section 1](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/)
+    - [Computational Complexity: Section 2](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/)
+- [ ] [Cheat sheet](http://bigocheatsheet.com/)
 
 
-    Se alguma das aulas forem muito "matemáticas", você pode pular para o final e 
-    ver o vídeo de matemática discreta para ganhar um conhecimento base.
+    If some of the lectures are too mathy, you can jump down to the bottom and
+    watch the discrete mathematics videos to get the background knowledge.
 
-## Estrutura de Dados
+## Data Structures
 
 - ### Arrays
     - Implement an automatically resizing vector.
@@ -582,7 +591,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - empty: O(1) (linked list and array)
 
 - ### Hash table
-    - [ ] vídeos:
+    - [ ] Videos:
         - [ ] [Hashing with Chaining (video)](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
         - [ ] [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
         - [ ] [Open Addressing, Cryptographic Hashing (video)](https://www.youtube.com/watch?v=rvdJDijO2Ro&index=10&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
@@ -609,7 +618,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - get(key)
         - remove(key)
 
-## Mais Conhecimento
+## More Knowledge
 
 - ### Binary search
     - [ ] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
@@ -620,7 +629,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - binary search using recursion
 
 - ### Bitwise operations
-    - [ ] [Bits cheat sheet](https://github.com/jwasham/google-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
+    - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
         - [ ] [words](https://en.wikipedia.org/wiki/Word_(computer_architecture))
         - [ ] Good intro:
@@ -801,7 +810,6 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     - [ ] [Randomization: Matrix Multiply, Quicksort, Freivalds' algorithm (video)](https://www.youtube.com/watch?v=cNB2lADK3_s&index=8&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [ ] [Sorting in Linear Time (video)](https://www.youtube.com/watch?v=pOKy3RZbSws&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&index=14)
 
-As a summary, here is a visual representation of [15 sorting algorithms](https://www.youtube.com/watch?v=kPRA0W1kECg).
 If you need more detail on this subject, see "Sorting" section in [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
 
 ## Graphs
@@ -860,7 +868,7 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] list strongly connected components
         - [ ] check for bipartite graph
 
-Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de livro abaixo) e os livros da entrevista
+You'll get more graph practice in Skiena's book (see Books section below) and the interview books
 
 ## Even More Knowledge
 
@@ -878,7 +886,7 @@ Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de
 - ### Dynamic Programming
     - This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
     - I suggest looking at many examples of DP problems until you have a solid understanding of the pattern involved.
-    - [ ] vídeos:
+    - [ ] Videos:
         - the Skiena videos can be hard to follow since he sometimes uses the whiteboard, which is too small to see
         - [ ] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
         - [ ] [Skiena: CSE373 2012 - Lecture 20 - Edit Distance (video)](https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=2749)
@@ -907,11 +915,10 @@ Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de
         - [OOSE: Software Dev Using UML and Java](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
     - [ ] SOLID OOP Principles:
         - [ ] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
-        - [ ] [SOLID Design Patterns in C# (video)](https://www.youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ)
         - [ ] [SOLID Principles (video)](https://www.youtube.com/playlist?list=PL4CE9F710017EA77A)
         - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
             - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
-        - [ ] O - [Open/Closed Principal](http://www.oodesign.com/open-close-principle.html) | [On production level Objects are ready for extension for not for modification](https://en.wikipedia.org/wiki/Open/closed_principle)
+        - [ ] O - [Open/Closed Principal](http://www.oodesign.com/open-close-principle.html)  | [On production level Objects are ready for extension but not for modification](https://en.wikipedia.org/wiki/Open/closed_principle)
             - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&hl=en)
         - [ ] L - [Liskov Substitution Principal](http://www.oodesign.com/liskov-s-substitution-principle.html) | [Base Class and Derived class follow ‘IS A’ principal](http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle)
             - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&hl=en)
@@ -945,11 +952,10 @@ Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de
     - [ ] [Chapter 6 (Part 1) - Patterns (video)](https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&t=3344)
     - [ ] [Chapter 6 (Part 2) - Abstraction-Occurrence, General Hierarchy, Player-Role, Singleton, Observer, Delegation (video)](https://www.youtube.com/watch?v=U8-PGsjvZc4&index=12&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
     - [ ] [Chapter 6 (Part 3) - Adapter, Facade, Immutable, Read-Only Interface, Proxy (video)](https://www.youtube.com/watch?v=7sduBHuex4c&index=13&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
-    - [ ] [Video series (27 videos)](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
+    - [ ] [Series of videos (27 videos)](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
     - [ ] [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124)
         - I know the canonical book is "Design Patterns: Elements of Reusable Object-Oriented Software", but Head First is great for beginners to OO.
     - [ ] [Handy reference: 101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
-    - [ ] [Design patterns for humans](https://github.com/kamranahmedse/design-patterns-for-humans#structural-design-patterns)
 
 - ### Combinatorics (n choose k) & Probability
     - [ ] [Math Skills: How to find Factorial, Permutation and Combination (Choose) (video)](https://www.youtube.com/watch?v=8RRo6Ti9d0U)
@@ -969,7 +975,7 @@ Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de
     - [ ] Simonson:
         - [ ] [Greedy Algs. II & Intro to NP Completeness (video)](https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939)
         - [ ] [NP Completeness II & Reductions (video)](https://www.youtube.com/watch?v=e0tGC6ZQdQE&index=16&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
-        - [ ] [NP Completeness III (video)](https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
+        - [ ] [NP Completeness III (Video)](https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
         - [ ] [NP Completeness IV (video)](https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18)
     - [ ] Skiena:
         - [ ] [CSE373 2012 - Lecture 23 - Introduction to NP-Completeness (video)](https://youtu.be/KiK5TVgXbFg?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1508)
@@ -1277,8 +1283,8 @@ Você ganhará mais prática com gráficos no livro do Skiena (veja a seção de
 
 ## Final Review
 
-    Essa seção terá vídeos mais curtos que você pode assistir rapidamente para revisar a maioria dos conceitos importantes.
-    É legal se você quiser dar uma refrescada na memória.
+    This section will have shorter videos that you can watch pretty quickly to review most of the important concepts.
+    It's nice if you want a refresher often.
 
 - [ ] Series of 2-3 minutes short subject videos (23 videos)
     - [Videos](https://www.youtube.com/watch?v=r4r1DZcx1cM&list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&index=22)
@@ -1380,7 +1386,6 @@ Challenge sites:
 Mock Interviews:
 - [Gainlo.co: Mock interviewers from big companies](http://www.gainlo.co/)
 - [Pramp: Mock interviews from/with peers](https://www.pramp.com/)
-- [Refdash: Mock interviews](https://refdash.com/)
 
 ## Once you're closer to the interview
 
